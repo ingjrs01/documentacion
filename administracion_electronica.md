@@ -108,7 +108,6 @@ Ley 25/2007, de 18 de octubre, de conservación de datos relativos a las comunic
 Ley 58/2003, de 17 de diciembre, General Tributaria. 
 
 
-
 ## Sede Electrónica.
 
 La sede electrónica está regulada por la LAECSP en sus artículos 10 y 17, defiéndola como aquella dirección electronica (definica ésta en la propia ley com el "identificador de un equipo o sistema electrónico desde el que se provee de información o servicios en una red de comunicaciones") disponible para los ciudadanos a través de redes de telecomunicaciones cuya titularidad, gestión y administración corresponde a una Administración Pública, órgano o entidad administrativa en el ejercicio de sus competencias". 
@@ -154,6 +153,9 @@ Las sedes electrónicas están reguladas y normalizadas, por lo que requieren co
 ### Sede electrónca vs registro electrónico. 
 Si existe registro, se accederá a él desde la sede
 Puede haber sedes sin registro electrónico
+
+## Registro Electrónico.
+
 
 ## Canales y puntos de acceso. 
 Serán canales de acceso a los servicios disponibles en la sede: 
