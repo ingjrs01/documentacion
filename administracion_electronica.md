@@ -155,7 +155,7 @@ Si existe registro, se accederá a él desde la sede
 Puede haber sedes sin registro electrónico
 
 ## Registro Electrónico.
-El concepto de Registro Electrónico se intrudujo ya con la Ley 24/2001, de 27 de diciembre, sobre registro telemático, que incorpora una serie de artículos a la LRJ-PAC con el fin de regular esta materia, sin embargo, la LAECSP deroga todos estos artículos para introducir una nueva regulación más acorde con las nuevas necesidades surgidas con la progresiva implantación de la Administración Electrónica. 
+l concepto de Registro Electrónico se intrudujo ya con la Ley 24/2001, de 27 de diciembre, sobre registro telemático, que incorpora una serie de artículos a la LRJ-PAC con el fin de regular esta materia, sin embargo, la LAECSP deroga todos estos artículos para introducir una nueva regulación más acorde con las nuevas necesidades surgidas con la progresiva implantación de la Administración Electrónica. 
 
 La LAECSP no modifica la normativa sobre el registro presencial, sino que viene a añadir un nuevo canal, asegurando el acceso a los ciudadanos a la tramitacíon electronica con las mismas garantías que ofrece el procedimiento presencial. Este nuevo canal permite registrar la entrada de cualuqier solicitud, queja o escrito dirigfidos a la administración titular del mismo, y la salida de calquier notificación , comunicación o documento, certificando en ambos caoss la fecha y la hora de cada asiento.
 
