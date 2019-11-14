@@ -684,3 +684,101 @@ Contenido de las vistas.
 ....
 
 ### Yield
+
+
+### Directivas
+
+- @csrf Indicarla despues de un formulario: Genera el token de seguridad. 
+
+
+
+## Middleware. 
+
+Se ytrata de una capa que nos provee de las comprobaciones de usuario. 
+
+Se puede aplicar de varias maneras. Por ejemplo, dentro del route: 
+
+```php
+<?php
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('agenda','AgendaController');
+Route::get('/cancelar',function(){
+    return redirect()->route('agenda.index')->with('cancelar','Acción Cancelada');
+})->name('cancelar');
+
+Route::get('/agenda/{id}/confirm','AgendaController@confirm')->name('agenda.confirm')->middelware('auth);
+
+```
+
+Otra forma de hacer lo mismo, es pasandolo como parámetro. Nos quedaría así: 
+```php
+<?php
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//....
+
+Route::get('/agenda/{id}/confirm',['middelware' =>'auth']  ,'AgendaController@confirm')->name('agenda.confirm');
+
+```
+
+Una tercera forma de hacerlo es en el constructor del controlador. Veámoslo: 
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+ 
+```
+La ventaja es que en los demás, sólo se ejecuta cuando se llama a esa ruta concreta, sin embargo aquí, se ejecuta siempre que se instancia al controlador. Si necesitase aplicar solo a determinados métodos:
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function __construct()
+    {
+        $this->middleware('auth',['only'=>'create']);
+    }
+ 
+```
+
+Por último, esto es totalmente equivalente a: 
+
+```php
+<?php
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
+{
+    public function __construct()
+    {
+        $this->middleware('auth')->only(['create']);
+    }
+ 
+```
+
